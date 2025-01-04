@@ -1,9 +1,9 @@
-@import 'mixins';
-@import 'navbar';
-@import 'hero';
-@import 'about';
-@import 'portfolio';
-@import 'contact';
+@import 'styles/mixins';
+@import 'styles/navbar';
+@import 'styles/hero';
+@import 'styles/about';
+@import 'styles/portfolio';
+@import 'styles/contact';
 
 /* Global CSS */
 
@@ -89,38 +89,6 @@ h2 {
   line-height: 58px;
   letter-spacing: 3px;
   font-family: winterMinie, Tahoma, sans-serif;
-}
-/* Heading 3 */
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 34px;
-}
-
-/* Pragraphs text large medium small */
-/* Body 1 */
-.text-lg {
-  color: var(--lightpink);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 27px;
-}
-/* Body 2 */
-.text-md {
-  color: var(--lightpink);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-}
-/* Body 3 */
-.text-sm {
-  color: var(--black);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
 }
 
 .section {
