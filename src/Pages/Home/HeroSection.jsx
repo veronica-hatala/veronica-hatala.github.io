@@ -1,5 +1,6 @@
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaPhp, FaSass, FaWordpress, FaReact } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export default function HeroSection() {
     return (
@@ -21,8 +22,18 @@ export default function HeroSection() {
                     </p>
                 </div>
                 <div className="hero-section-button-box">
-                    <button className="btn btn-primary">Contact</button>
-                    <button className="btn btn-primary">Resume</button>    
+                    <Link
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        to="Contact"
+                        className="btn btn-primary"
+                    >
+                        Contact
+                    </Link>
+                    <a className="btn btn-primary" target="_blank" 
+                    href="https://www.linkedin.com/in/veronica-hatala/overlay/1736004365061/single-media-viewer/?profileId=ACoAAC73l50BlHQDKPpMVoHPQNb6hXLcGSv45Qs">
+                    Resume</a>    
                 </div>
             </div>
             <div className="hero-section-right-box">

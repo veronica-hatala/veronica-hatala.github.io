@@ -7,7 +7,7 @@ function PortfolioSection({ title, items }) {
       <div className="portfolio-subheading">{title}</div>
       <div className="portfolio-container">
         {items?.map((item, index) => (
-          <a key={index} className="portfolio-card"  href={item.link}>
+          <a key={index} className="portfolio-card" href={item.link} target="_blank">
             <div className="portfolio-img">
               <img src={item.src} alt="Placeholder" />
             </div>
