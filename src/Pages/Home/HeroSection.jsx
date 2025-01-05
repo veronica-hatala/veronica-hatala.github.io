@@ -32,7 +32,7 @@ export default function HeroSection() {
                         Contact
                     </Link>
                     <a className="btn btn-primary" target="_blank" 
-                    href="https://www.linkedin.com/in/veronica-hatala/overlay/1736004365061/single-media-viewer/?profileId=ACoAAC73l50BlHQDKPpMVoHPQNb6hXLcGSv45Qs">
+                    href="https://www.linkedin.com/in/veronica-hatala/overlay/1736103171569/single-media-viewer/?profileId=ACoAAC73l50BlHQDKPpMVoHPQNb6hXLcGSv45Qs">
                     Resume</a>    
                 </div>
             </div>
