@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Veronica Hatala</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<script>
+function openMenu() {
+  var x = document.getElementById("topNavBar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+
+<body>
+
+    <div class="navbar" id="topNavBar">
+    <a href="#home" class="active">Veronica Hatala</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+        <i class="fa fa-bars"></i>
+    </a>
+    </div>
+
+    <main>
+        
+        <div class="hero">
+            <h3>Veronica Hatala</h3>
+            <h1>Front-End Developer<br>Web Designer<br>SEO Specialist</h1>
+        </div>
+
+        <div class="about" id="about">
+            <h2>About</h2>
+            <div class="about-left-col">
+                <p>
+        Hey! I'm Veronica, and I love bringing development projects to life. Coding is my profession, hobby, and
+        a way that I can give back to my community by volunteering. I'm always eager to learn more and improve
+        my skills as a developer and designer. I have previous professional experience using PHP, WordPress, HTML,
+        CSS and Sass, JavaScript, and React. Web design is a newer venture of mine, and I'm learning more everyday while working
+        with Figma, Inkscape, and GIMP. I also have experience optimizing for SEO through content writing and improving Core Web Vitals,
+        tracking site statistics using Semrush, Google Analytics, and Google Search Console, and compiling those stats into Google
+        Looker Studio. I'm really passionate about the web and the work that I do, and I'd love to bring that passion to your team.</p>
+                <h3>Education</h3>
+                <div class="education">
+                    Bachelors of Science in Computer Science, Minor in History<br>
+                    Saint Mary's University, Nova Scotia, 2021
+                </div>
+                <div class="education">
+                    Associates of Science in Computer Science<br>
+                    County College of Morris, New Jersey, 2019
+                </div>
+                <h3>Professional Experience</h3>
+                <div class="pro-exp">
+                    TechStarters, Inc.<br>
+                    Web Specialist<br>
+                    March 2025 - Present<br>
+                    <ul>
+                        <li>Developed custom WordPress websites for multiple clients using PHP, Twig, JavaScript, and CSS/Sass, working closely with clients on site rebuilds and new template and feature development.</li>
+                        <li>Managed client support and maintenance tickets, providing timely solutions and maintaining high customer satisfaction. </li>
+                        <li>Designed user-centric UX wireframes and visually compelling UI designs using Figma, working through iterations with clients and responding to feedback.</li>
+                        <li>Conducted SEO audits and optimized web content and Core Web Vitals for search engines to improve organic visibility and traffic.</li>
+                        <li>Managed SEO with analytics tools, including Semrush, Google Analytics, and Google Search Console, across diverse client portfolios, and reported findings to clients with reports  in Google Looker Studio.</li>
+                    </ul>
+                </div>
+                <div class="pro-exp">
+                    Resulta<br>
+                    Software Developer<br>
+                    July 2021 - September 2024<br>
+                    <ul>
+                        <li>Implemented innovative front-end components and features with WordPress, JavaScript, PHP, React, and CSS/Sass, based on Adobe XD mockups, elevating website functionality and increasing user retention</li>
+                        <li>Developed backend user plugins for WordPress, streamlining the work of content writers</li>
+                        <li>Onboarded interns and new hires, teaching about internal company software, development workflow, coding standards, and guiding interns through using new programming languages</li>
+                        <li>Participated in Agile development methodology and collaborated with colleagues in code reviews to maintain high-quality code standards</li>
+                        <li>Optimized websites for SEO using Lighthouse, increasing scores to promote traffic through Google search</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-right-col">
+                <ul>
+                    <li>Figma</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <div class="portfolio-image">TBA</div>
+                <div class="portfolio-item-left-col">
+                    <h3>Interfaith Harmony Halifax</h3>
+                    <h4>WordPress, PHP</h4>
+                    <a href="https://interfaithharmonyhfx.org/" target="_blank">Visit Site</a>
+                </div>
+                <div class="portfolio-item-right-col">
+                    <p>Interfaith Harmony Halifax is the Nova Scotia branch of the UN's World Interfaith Harmony Week initiative,
+                        which promotes interfaith dialogue and acceptance in cities across the world. I was asked to design, develop, and
+                        deploy this website primarily to communicate the various events occuring during Interfaith Harmony Week. I created
+                        a calendar plugin as well as a video tutorial to help non-technical committee members easily update the site's calendar.
+                    </p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-image">TBA</div>
+                <div class="portfolio-item-left-col">
+                    <h3>Earth Spirit Society of Nova Scotia</h3>
+                    <h4>WordPress, PHP</h4>
+                    <a href="https://essns.org/" target="_blank">Visit Site</a>
+                </div>
+                <div class="portfolio-item-right-col">
+                    <p>Earth Spirit Society of Nova Scotia is an organization that I have done a lot of volunteer work
+                        for as I have a great passion for their mission, so it was an easy decision to accept when they asked
+                        me to build their website. This site is one of the first websites I have worked on for an external
+                        client, and I continue to maintain the site to this day.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/veronica-hatala/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/veronica-hatala">GitHub</a></li>
+                <li>veronica.hatala@gmail.com</li>
+                <li>+1 201-213-4039</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Veronica Hatala</p>
+    </footer>
+
+</body>
+</html>

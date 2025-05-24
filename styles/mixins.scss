@@ -1,0 +1,35 @@
+/*Color Palette*/
+$primary1: #CB997E;
+$secondary1: #EDDCD2;
+$tertiary1: #DDBEA9;
+$primary2: #A5A58D;
+$secondary2: #B7B7A4;
+$offwhite1: #FFF1E6;
+$offwhite2: #F0EFEB;
+$black: #373727;
+
+$media: (
+    sm: 640px,
+    md: 768px,
+    lg: 1200px,
+    xl: 1400px,
+    3xl: 1920px,
+);
+
+@mixin respond($breakpoint) {
+  $direction: str-slice($breakpoint, 1, 3);
+  $point: str-slice($breakpoint, 5);
+  @each $key, $size in $media {
+    @if $point == $key {
+      @if $direction == "min" {
+        @media screen and (min-width: $size) {
+          @content;
+        }
+      } @else if $direction == "max" {
+        @media screen and (max-width: $size) {
+          @content;
+        }
+      }
+    }
+  }
+}

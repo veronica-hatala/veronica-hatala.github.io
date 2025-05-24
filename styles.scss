@@ -1,0 +1,71 @@
+@import 'styles/mixins';
+@import 'styles/navbar';
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  background-color: $offwhite2;
+  color: $black;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+    color: $primary1;
+}
+
+h2 {
+    color: $primary2;
+    font-family: "Zen Kurenaido", sans-serif;
+}
+
+h3 {
+    font-family: "Zen Kurenaido", sans-serif;
+    color: $primary1;
+}
+
+h4 {
+    color: $secondary2;
+}
+
+a {
+    color: $secondary2;
+}
+
+.hero, .about, .portfolio, .contact {
+    margin-bottom: 160px;
+}
+
+/*Hero*/
+
+.hero {
+    h3 {
+        color: $primary2;
+    }
+}
+
+/* About */
+.about {
+    display: grid;
+    gap: 40px;
+    grid-template-areas: 
+    'title title'
+    'left  right';
+    h2 {
+        grid-area: title;
+    }
+    .about-left-col {
+        grid-area: left;
+        display: grid;
+        gap: 40px;
+    }
+    .about-right-col {
+        grid-area: right;
+    }
+}

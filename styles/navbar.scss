@@ -1,0 +1,50 @@
+.navbar {
+  overflow: hidden;
+  background-color: $offwhite2;
+
+  a {
+    float: left;
+    display: block;
+    color: $primary2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+    &:hover {
+      color: $secondary2;
+    }
+  }
+
+  .icon {
+    display: none;
+  }
+
+  // Responsive (max-width: 600px = mobile)
+  @include respond(max-sm) {
+    a:not(:first-child) {
+      display: none;
+    }
+
+    a.icon {
+      float: right;
+      display: block;
+    }
+
+    &.responsive {
+      position: relative;
+
+      .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+  }
+}

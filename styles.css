@@ -1,0 +1,108 @@
+/*Color Palette*/
+.navbar {
+  overflow: hidden;
+  background-color: #F0EFEB;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #A5A58D;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  color: #B7B7A4;
+}
+.navbar .icon {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+  background-color: #F0EFEB;
+  color: #373727;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  color: #CB997E;
+}
+
+h2 {
+  color: #A5A58D;
+  font-family: "Zen Kurenaido", sans-serif;
+}
+
+h3 {
+  font-family: "Zen Kurenaido", sans-serif;
+  color: #CB997E;
+}
+
+h4 {
+  color: #B7B7A4;
+}
+
+a {
+  color: #B7B7A4;
+}
+
+.hero, .about, .portfolio, .contact {
+  margin-bottom: 160px;
+}
+
+/*Hero*/
+.hero h3 {
+  color: #A5A58D;
+}
+
+/* About */
+.about {
+  display: grid;
+  gap: 40px;
+  grid-template-areas: "title title" "left  right";
+}
+.about h2 {
+  grid-area: title;
+}
+.about .about-left-col {
+  grid-area: left;
+  display: grid;
+  gap: 40px;
+}
+.about .about-right-col {
+  grid-area: right;
+}
+
+/*# sourceMappingURL=styles.css.map */
