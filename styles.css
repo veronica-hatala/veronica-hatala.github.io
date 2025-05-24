@@ -8,7 +8,7 @@
   display: block;
   color: #A5A58D;
   text-align: center;
-  padding: 14px 16px;
+  padding-right: 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -83,8 +83,17 @@ a {
 }
 
 /*Hero*/
+.hero {
+  height: 30vw;
+  display: grid;
+  align-items: center;
+}
 .hero h3 {
   color: #A5A58D;
+  align-self: end;
+}
+.hero h1 {
+  align-self: self-start;
 }
 
 /* About */
@@ -101,8 +110,27 @@ a {
   display: grid;
   gap: 40px;
 }
+.about .about-left-col .pro-exp ul {
+  margin-top: 32px;
+  list-style-position: inside;
+  list-style-type: circle;
+}
 .about .about-right-col {
   grid-area: right;
+}
+
+/* Portfolio */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Contact */
+.contact ul {
+  margin-top: 32px;
+  list-style-position: inside;
+  list-style-type: circle;
 }
 
 /*# sourceMappingURL=styles.css.map */

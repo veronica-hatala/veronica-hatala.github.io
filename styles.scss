@@ -45,8 +45,15 @@ a {
 /*Hero*/
 
 .hero {
+    height: 30vw;
+    display: grid;
+    align-items: center;
     h3 {
         color: $primary2;
+        align-self: end;
+    }
+    h1 {
+        align-self:self-start;
     }
 }
 
@@ -64,8 +71,32 @@ a {
         grid-area: left;
         display: grid;
         gap: 40px;
+
+        .pro-exp {
+            ul {
+                margin-top: 32px;
+                list-style-position: inside;
+                list-style-type: circle;
+            }
+        }
     }
     .about-right-col {
         grid-area: right;
+    }
+}
+
+/* Portfolio */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Contact */
+.contact {
+    ul {
+        margin-top: 32px;
+        list-style-position: inside;
+        list-style-type: circle;
     }
 }
