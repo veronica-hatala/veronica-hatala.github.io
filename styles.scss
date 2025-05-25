@@ -14,6 +14,7 @@ body {
   color: $black;
   line-height: 1.6;
   padding: 20px;
+  margin-right: 25%;
 }
 
 h1 {
@@ -45,15 +46,24 @@ a {
 /*Hero*/
 
 .hero {
-    height: 30vw;
+    height: calc(100vh - 210px);
     display: grid;
     align-items: center;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+        'title1 photo'
+        'title2 photo';
     h3 {
         color: $primary2;
         align-self: end;
+        grid-area: title1;
     }
     h1 {
         align-self:self-start;
+        grid-area: title2;
+    }
+    .hero-image {
+        grid-area: photo;
     }
 }
 
@@ -75,8 +85,10 @@ a {
         .pro-exp {
             ul {
                 margin-top: 32px;
-                list-style-position: inside;
                 list-style-type: circle;
+                li {
+                    margin-left: 20px;
+                }
             }
         }
     }

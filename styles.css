@@ -54,6 +54,7 @@ body {
   color: #373727;
   line-height: 1.6;
   padding: 20px;
+  margin-right: 25%;
 }
 
 h1 {
@@ -84,16 +85,23 @@ a {
 
 /*Hero*/
 .hero {
-  height: 30vw;
+  height: calc(100vh - 210px);
   display: grid;
   align-items: center;
+  grid-template-rows: 2fr 2fr;
+  grid-template-areas: "title1 photo" "title2 photo";
 }
 .hero h3 {
   color: #A5A58D;
   align-self: end;
+  grid-area: title1;
 }
 .hero h1 {
   align-self: self-start;
+  grid-area: title2;
+}
+.hero .hero-image {
+  grid-area: photo;
 }
 
 /* About */
@@ -112,8 +120,10 @@ a {
 }
 .about .about-left-col .pro-exp ul {
   margin-top: 32px;
-  list-style-position: inside;
   list-style-type: circle;
+}
+.about .about-left-col .pro-exp ul li {
+  margin-left: 20px;
 }
 .about .about-right-col {
   grid-area: right;
