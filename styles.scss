@@ -14,7 +14,9 @@ body {
   color: $black;
   line-height: 1.6;
   padding: 20px;
-  margin-right: 25%;
+  @include respond(min-lg) {
+    margin-right: 25%;
+  }
 }
 
 h1 {
